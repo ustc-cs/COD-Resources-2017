@@ -1,0 +1,29 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/BlackBoxCGROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CGROMBlackbox
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-311] analyzing module MMap
+INFO: [VRFC 10-311] analyzing module Mem
+INFO: [VRFC 10-311] analyzing module VGACore
+INFO: [VRFC 10-311] analyzing module CGROM
+INFO: [VRFC 10-311] analyzing module VGA
+INFO: [VRFC 10-311] analyzing module DDU
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/new/uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
