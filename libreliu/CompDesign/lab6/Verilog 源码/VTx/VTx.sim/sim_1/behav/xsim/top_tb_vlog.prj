@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../VTx.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../VTx.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../VTx.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" \
+"../../../../VTx.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../VTx.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+"../../../../VTx.srcs/sources_1/imports/VTx_Reg/BlackBoxCGROM.v" \
+"../../../../VTx.srcs/sources_1/imports/VTx_Reg/DDU.v" \
+"../../../../VTx.srcs/sources_1/imports/new/top.v" \
+"../../../../VTx.srcs/sources_1/new/uart.v" \
+"../../../../VTx.srcs/sim_1/new/top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

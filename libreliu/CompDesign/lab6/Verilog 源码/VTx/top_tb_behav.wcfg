@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="457793968000fs"></ZoomStartTime>
+      <ZoomEndTime time="458756968001fs"></ZoomEndTime>
+      <Cursor1Time time="458200929000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="228"></NameColumnWidth>
+      <ValueColumnWidth column_width="79"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="60" />
+   <wave_markers>
+      <marker label="" time="3093472000" />
+      <marker label="" time="1652947000" />
+      <marker label="" time="1780051000" />
+      <marker label="" time="421269789000" />
+   </wave_markers>
+   <wvobject type="logic" fp_name="/top_tb/ddu/clk_in1">
+      <obj_property name="ElementShortName">clk_in1</obj_property>
+      <obj_property name="ObjectShortName">clk_in1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/io_cont">
+      <obj_property name="ElementShortName">io_cont</obj_property>
+      <obj_property name="ObjectShortName">io_cont</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/io_step">
+      <obj_property name="ElementShortName">io_step</obj_property>
+      <obj_property name="ObjectShortName">io_step</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/io_mem">
+      <obj_property name="ElementShortName">io_mem</obj_property>
+      <obj_property name="ObjectShortName">io_mem</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/io_inc">
+      <obj_property name="ElementShortName">io_inc</obj_property>
+      <obj_property name="ObjectShortName">io_inc</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/io_dec">
+      <obj_property name="ElementShortName">io_dec</obj_property>
+      <obj_property name="ObjectShortName">io_dec</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/io_disp_seg">
+      <obj_property name="ElementShortName">io_disp_seg[6:0]</obj_property>
+      <obj_property name="ObjectShortName">io_disp_seg[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/io_disp_dp">
+      <obj_property name="ElementShortName">io_disp_dp</obj_property>
+      <obj_property name="ObjectShortName">io_disp_dp</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/io_disp_an">
+      <obj_property name="ElementShortName">io_disp_an[7:0]</obj_property>
+      <obj_property name="ObjectShortName">io_disp_an[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/io_led">
+      <obj_property name="ElementShortName">io_led[15:0]</obj_property>
+      <obj_property name="ObjectShortName">io_led[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/i_Rx_Serial">
+      <obj_property name="ElementShortName">i_Rx_Serial</obj_property>
+      <obj_property name="ObjectShortName">i_Rx_Serial</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/io_vga_sig_r">
+      <obj_property name="ElementShortName">io_vga_sig_r[3:0]</obj_property>
+      <obj_property name="ObjectShortName">io_vga_sig_r[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/io_vga_sig_g">
+      <obj_property name="ElementShortName">io_vga_sig_g[3:0]</obj_property>
+      <obj_property name="ObjectShortName">io_vga_sig_g[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/io_vga_sig_b">
+      <obj_property name="ElementShortName">io_vga_sig_b[3:0]</obj_property>
+      <obj_property name="ObjectShortName">io_vga_sig_b[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/io_vga_sig_hsync">
+      <obj_property name="ElementShortName">io_vga_sig_hsync</obj_property>
+      <obj_property name="ObjectShortName">io_vga_sig_hsync</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/io_vga_sig_vsync">
+      <obj_property name="ElementShortName">io_vga_sig_vsync</obj_property>
+      <obj_property name="ObjectShortName">io_vga_sig_vsync</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/clock">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/io_vram_port_wen">
+      <obj_property name="ElementShortName">io_vram_port_wen</obj_property>
+      <obj_property name="ObjectShortName">io_vram_port_wen</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/io_vram_port_waddr">
+      <obj_property name="ElementShortName">io_vram_port_waddr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">io_vram_port_waddr[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/io_vram_port_wdata">
+      <obj_property name="ElementShortName">io_vram_port_wdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">io_vram_port_wdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/io_vram_port_raddr">
+      <obj_property name="ElementShortName">io_vram_port_raddr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">io_vram_port_raddr[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/io_vram_port_rdata">
+      <obj_property name="ElementShortName">io_vram_port_rdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">io_vram_port_rdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/io_uart_port_mem_rdata">
+      <obj_property name="ElementShortName">io_uart_port_mem_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">io_uart_port_mem_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/io_uart_port_mem_wdata">
+      <obj_property name="ElementShortName">io_uart_port_mem_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">io_uart_port_mem_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/io_uart_port_mem_wen">
+      <obj_property name="ElementShortName">io_uart_port_mem_wen</obj_property>
+      <obj_property name="ObjectShortName">io_uart_port_mem_wen</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/i_Rx_Next">
+      <obj_property name="ElementShortName">i_Rx_Next</obj_property>
+      <obj_property name="ObjectShortName">i_Rx_Next</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/o_Rx_DV">
+      <obj_property name="ElementShortName">o_Rx_DV</obj_property>
+      <obj_property name="ObjectShortName">o_Rx_DV</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/o_Rx_Byte">
+      <obj_property name="ElementShortName">o_Rx_Byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_Rx_Byte[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider196" type="divider">
+      <obj_property name="label">VideoMem</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/your_instance_name/clka">
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/your_instance_name/ena">
+      <obj_property name="ElementShortName">ena</obj_property>
+      <obj_property name="ObjectShortName">ena</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/your_instance_name/wea">
+      <obj_property name="ElementShortName">wea[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/your_instance_name/addra">
+      <obj_property name="ElementShortName">addra[11:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/your_instance_name/dina">
+      <obj_property name="ElementShortName">dina[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/your_instance_name/clkb">
+      <obj_property name="ElementShortName">clkb</obj_property>
+      <obj_property name="ObjectShortName">clkb</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/your_instance_name/addrb">
+      <obj_property name="ElementShortName">addrb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/your_instance_name/doutb">
+      <obj_property name="ElementShortName">doutb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider213" type="divider">
+      <obj_property name="label">CGROM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/my_ddu/vga_inst/cgrom/clock">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/vga_inst/cgrom/io_addr">
+      <obj_property name="ElementShortName">io_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">io_addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/vga_inst/cgrom/io_row">
+      <obj_property name="ElementShortName">io_row[3:0]</obj_property>
+      <obj_property name="ObjectShortName">io_row[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/vga_inst/cgrom/io_data">
+      <obj_property name="ElementShortName">io_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">io_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/vga_inst/cgrom/impl_data">
+      <obj_property name="ElementShortName">impl_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">impl_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/vga_inst/cgrom/impl_row">
+      <obj_property name="ElementShortName">impl_row[3:0]</obj_property>
+      <obj_property name="ObjectShortName">impl_row[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/vga_inst/cgrom/impl_addr">
+      <obj_property name="ElementShortName">impl_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">impl_addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/my_ddu/vga_inst/cgrom/impl_clock">
+      <obj_property name="ElementShortName">impl_clock</obj_property>
+      <obj_property name="ObjectShortName">impl_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider277" type="divider">
+      <obj_property name="label">CGROM BRAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ddu/my_ddu/vga_inst/cgrom/impl/your_instance_name/clka">
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/vga_inst/cgrom/impl/your_instance_name/addra">
+      <obj_property name="ElementShortName">addra[10:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[10:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/vga_inst/cgrom/impl/your_instance_name/douta">
+      <obj_property name="ElementShortName">douta[7:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group224">
+      <obj_property name="label">CPU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/cpu/io_debug_pc">
+         <obj_property name="ElementShortName">io_debug_pc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">io_debug_pc[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/cpu/io_mem_port_mem_addr">
+         <obj_property name="ElementShortName">io_mem_port_mem_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">io_mem_port_mem_addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/cpu/io_mem_port_mem_wdata">
+         <obj_property name="ElementShortName">io_mem_port_mem_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">io_mem_port_mem_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/top_tb/ddu/my_ddu/cpu/io_mem_port_mem_wen">
+         <obj_property name="ElementShortName">io_mem_port_mem_wen</obj_property>
+         <obj_property name="ObjectShortName">io_mem_port_mem_wen</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/cpu/ctrl/io_base_Inst">
+         <obj_property name="ElementShortName">io_base_Inst[31:0]</obj_property>
+         <obj_property name="ObjectShortName">io_base_Inst[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/cpu/datapath/regFile/regs_4">
+         <obj_property name="ElementShortName">regs_4[31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs_4[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group223">
+      <obj_property name="label">UART</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/top_tb/ddu/uart_inst/mem_wen">
+         <obj_property name="ElementShortName">mem_wen</obj_property>
+         <obj_property name="ObjectShortName">mem_wen</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/top_tb/ddu/uart_inst/mem_clk">
+         <obj_property name="ElementShortName">mem_clk</obj_property>
+         <obj_property name="ObjectShortName">mem_clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/top_tb/ddu/uart_inst/rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/ddu/uart_inst/mem_wdata">
+         <obj_property name="ElementShortName">mem_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/ddu/uart_inst/mem_rdata">
+         <obj_property name="ElementShortName">mem_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/top_tb/ddu/uart_inst/i_Rx_Next">
+         <obj_property name="ElementShortName">i_Rx_Next</obj_property>
+         <obj_property name="ObjectShortName">i_Rx_Next</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/top_tb/ddu/uart_inst/o_Rx_DV">
+         <obj_property name="ElementShortName">o_Rx_DV</obj_property>
+         <obj_property name="ObjectShortName">o_Rx_DV</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/ddu/uart_inst/o_Rx_Byte">
+         <obj_property name="ElementShortName">o_Rx_Byte[7:0]</obj_property>
+         <obj_property name="ObjectShortName">o_Rx_Byte[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/top_tb/ddu/uart_inst/ready_bit">
+         <obj_property name="ElementShortName">ready_bit</obj_property>
+         <obj_property name="ObjectShortName">ready_bit</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/top_tb/ddu/uart_inst/ready_bit_prev">
+         <obj_property name="ElementShortName">ready_bit_prev</obj_property>
+         <obj_property name="ObjectShortName">ready_bit_prev</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider139" type="divider">
+      <obj_property name="label">VGASys</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/vga_inst/io_vram_raddr">
+      <obj_property name="ElementShortName">io_vram_raddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">io_vram_raddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/vga_inst/col_tick">
+      <obj_property name="ElementShortName">col_tick[6:0]</obj_property>
+      <obj_property name="ObjectShortName">col_tick[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/vga_inst/col_ctick">
+      <obj_property name="ElementShortName">col_ctick[3:0]</obj_property>
+      <obj_property name="ObjectShortName">col_ctick[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/vga_inst/row_tick">
+      <obj_property name="ElementShortName">row_tick[4:0]</obj_property>
+      <obj_property name="ObjectShortName">row_tick[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/vga_inst/row_ctick">
+      <obj_property name="ElementShortName">row_ctick[3:0]</obj_property>
+      <obj_property name="ObjectShortName">row_ctick[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/ddu/my_ddu/vga_inst/io_vram_rdata">
+      <obj_property name="ElementShortName">io_vram_rdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">io_vram_rdata[15:0]</obj_property>
+   </wvobject>
+</wave_config>

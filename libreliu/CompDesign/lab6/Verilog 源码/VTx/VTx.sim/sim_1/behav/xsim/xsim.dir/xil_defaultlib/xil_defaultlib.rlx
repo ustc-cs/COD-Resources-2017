@@ -1,0 +1,15 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/libreliu/Verilog/VivadoProj/VTx/VTx.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sim_1/new/top_tb.v,1559285108,verilog,,,,top_tb,,,../../../../VTx.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/BlackBoxCGROM.v,1559298446,verilog,,/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v,,CGROMBlackbox,,,../../../../VTx.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v,1559299709,verilog,,/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/new/top.v,,ALU;CGROM;CPU;Control;DDU;Datapath;MMap;Mem;RegFile;VGA;VGACore,,,../../../../VTx.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/new/top.v,1559145869,verilog,,/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/new/uart.v,,top,,,../../../../VTx.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1559925113,verilog,,/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,,blk_mem_gen_0,,,../../../../VTx.srcs/sources_1/ip/clk_wiz_0,,,,,
+,,,,,,,,,,,,,,
+/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1559188547,verilog,,/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/BlackBoxCGROM.v,,clk_wiz_0,,,../../../../VTx.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1559188547,verilog,,/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../VTx.srcs/sources_1/ip/clk_wiz_0,,,,,
+,,,,/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,,dist_mem_gen_0,,,,,,,,
+/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/new/uart.v,1559280694,verilog,,/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sim_1/new/top_tb.v,,UART;uart_rx,,,../../../../VTx.srcs/sources_1/ip/clk_wiz_0,,,,,

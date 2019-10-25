@@ -1,0 +1,379 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Fri May 31 20:51:22 2019
+| Host         : thinkpad-ssd running 64-bit unknown
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   308 |
+| Unused register locations in slices containing registers |    39 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            2 |
+|      5 |            2 |
+|      7 |            1 |
+|      8 |            4 |
+|     10 |            1 |
+|     13 |            1 |
+|     14 |            3 |
+|    16+ |          294 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              91 |           21 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              53 |           16 |
+| Yes          | No                    | No                     |              37 |           12 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            9412 |         5198 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+----------------------------------------+----------------------------------------+------------------+----------------+
+|      Clock Signal     |              Enable Signal             |            Set/Reset Signal            | Slice Load Count | Bel Load Count |
++-----------------------+----------------------------------------+----------------------------------------+------------------+----------------+
+|  my_clk/inst/clk_out1 | my_ddu/vga_inst/col_tick_carry         | my_ddu/vga_inst/row_ctick[3]_i_1_n_0   |                2 |              4 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/pc[31]_i_1_n_0     | reset_IBUF                             |                2 |              4 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/ctrl/cur_state[4]_i_1_n_0   |                                        |                3 |              5 |
+|  my_clk/inst/clk_out1 | my_ddu/vga_inst/row_tick[4]_i_2_n_0    | my_ddu/vga_inst/row_tick[4]_i_1_n_0    |                1 |              5 |
+|  my_clk/inst/clk_out1 | my_ddu/vga_inst/col_ctick_carry        | my_ddu/vga_inst/col_tick[6]_i_1_n_0    |                2 |              7 |
+|  my_clk/inst/clk_out1 |                                        | reset_IBUF                             |                4 |              8 |
+|  my_clk/inst/clk_out1 | my_ddu/_T_249[21]_i_1_n_0              | reset_IBUF                             |                2 |              8 |
+|  my_clk/inst/clk_out1 | my_ddu/_T_216[21]_i_1_n_0              | reset_IBUF                             |                2 |              8 |
+|  my_clk/inst/clk_out1 | my_ddu/_T_185[21]_i_1_n_0              | reset_IBUF                             |                1 |              8 |
+|  my_clk/inst/clk_out1 | my_ddu/disp_addr[0]_i_1_n_0            | reset_IBUF                             |                3 |             10 |
+|  my_clk/inst/clk_out1 |                                        | my_ddu/_T_53[0]_i_1_n_0                |                4 |             13 |
+|  my_clk/inst/clk_out1 | my_ddu/_T_249                          | my_ddu/_T_249[20]_i_1_n_0              |                6 |             14 |
+|  my_clk/inst/clk_out1 | my_ddu/_T_216                          | my_ddu/_T_216[20]_i_1_n_0              |                5 |             14 |
+|  my_clk/inst/clk_out1 | my_ddu/_T_185                          | my_ddu/_T_185[20]_i_1_n_0              |                5 |             14 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_247[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_245[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_246[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_239[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_248[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_249[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_24[31]_i_1_n_0  | reset_IBUF                             |               21 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_250[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_251[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_244[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_243[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_242[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_241[31]_i_1_n_0 | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_240[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_23[31]_i_1_n_0  | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_27[31]_i_1_n_0  | reset_IBUF                             |               21 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_238[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_237[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_2[31]_i_1_n_0   | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_37[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_36[31]_i_1_n_0  | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_35[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_34[31]_i_1_n_0  | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_33[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_32[31]_i_1_n_0  | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_31[31]_i_1_n_0  | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_30[31]_i_1_n_0  | reset_IBUF                             |               21 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_252[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_29[31]_i_1_n_0  | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_28[31]_i_1_n_0  | reset_IBUF                             |               23 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_22[31]_i_1_n_0  | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_26[31]_i_1_n_0  | reset_IBUF                             |               21 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_25[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_255[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_254[31]_i_1_n_0 | reset_IBUF                             |               15 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_253[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_212[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_21[31]_i_1_n_0  | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_219[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_218[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_217[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_216[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_215[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_214[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_213[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_220[31]_i_1_n_0 | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_211[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_210[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_20[31]_i_1_n_0  | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_209[31]_i_1_n_0 | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_208[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_207[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_206[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_205[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_228[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_235[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_234[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_233[31]_i_1_n_0 | reset_IBUF                             |               22 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_232[31]_i_1_n_0 | reset_IBUF                             |               21 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_231[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_230[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_44[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_229[31]_i_1_n_0 | reset_IBUF                             |               21 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_236[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_227[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_226[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_225[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_224[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_223[31]_i_1_n_0 | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_222[31]_i_1_n_0 | reset_IBUF                             |               21 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_221[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_78[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_85[31]_i_1_n_0  | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_84[31]_i_1_n_0  | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_83[31]_i_1_n_0  | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_82[31]_i_1_n_0  | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_81[31]_i_1_n_0  | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_80[31]_i_1_n_0  | reset_IBUF                             |               23 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_7[31]_i_1_n_0   | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_79[31]_i_1_n_0  | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_86[31]_i_1_n_0  | reset_IBUF                             |               22 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_77[31]_i_1_n_0  | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_76[31]_i_1_n_0  | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_75[31]_i_1_n_0  | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_74[31]_i_1_n_0  | reset_IBUF                             |               15 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_73[31]_i_1_n_0  | reset_IBUF                             |               21 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_72[31]_i_1_n_0  | reset_IBUF                             |               21 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_71[31]_i_1_n_0  | reset_IBUF                             |               21 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_70[31]_i_1_n_0  | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_94[31]_i_1_n_0  | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | uart_rx_inst/r_Clock_Count[31]_i_1_n_0 |                                        |                9 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/vga_inst/core/_T_43             | my_ddu/vga_inst/core/v_tick[0]_i_1_n_0 |                8 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_9[31]_i_1_n_0   | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_99[31]_i_1_n_0  | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_98[31]_i_1_n_0  | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_97[31]_i_1_n_0  | reset_IBUF                             |               22 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_96[31]_i_1_n_0  | reset_IBUF                             |               22 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_95[31]_i_1_n_0  | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_6[31]_i_1_n_0   | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_93[31]_i_1_n_0  | reset_IBUF                             |               22 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_92[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_91[31]_i_1_n_0  | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_90[31]_i_1_n_0  | reset_IBUF                             |               23 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_8[31]_i_1_n_0   | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_89[31]_i_1_n_0  | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_88[31]_i_1_n_0  | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_87[31]_i_1_n_0  | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_46[31]_i_1_n_0  | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_53[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_52[31]_i_1_n_0  | reset_IBUF                             |               14 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_51[31]_i_1_n_0  | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_50[31]_i_1_n_0  | reset_IBUF                             |               15 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_4[31]_i_1_n_0   | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_49[31]_i_1_n_0  | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_48[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_47[31]_i_1_n_0  | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_54[31]_i_1_n_0  | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_45[31]_i_1_n_0  | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_202[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_43[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_42[31]_i_1_n_0  | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_41[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_40[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_3[31]_i_1_n_0   | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_39[31]_i_1_n_0  | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_61[31]_i_1_n_0  | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_69[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_68[31]_i_1_n_0  | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_67[31]_i_1_n_0  | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_66[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_65[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_64[31]_i_1_n_0  | reset_IBUF                             |               22 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_63[31]_i_1_n_0  | reset_IBUF                             |               15 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_62[31]_i_1_n_0  | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_38[31]_i_1_n_0  | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_60[31]_i_1_n_0  | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_5[31]_i_1_n_0   | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_59[31]_i_1_n_0  | reset_IBUF                             |               15 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_58[31]_i_1_n_0  | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_57[31]_i_1_n_0  | reset_IBUF                             |               14 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_56[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_55[31]_i_1_n_0  | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_110[31]_i_1_n_0 | reset_IBUF                             |               22 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_119[31]_i_1_n_0 | reset_IBUF                             |               14 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_118[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_117[31]_i_1_n_0 | reset_IBUF                             |               15 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_116[31]_i_1_n_0 | reset_IBUF                             |               14 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_115[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_114[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_113[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_112[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_111[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_11[31]_i_1_n_0  | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_10[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_109[31]_i_1_n_0 | reset_IBUF                             |               21 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_108[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_107[31]_i_1_n_0 | reset_IBUF                             |               22 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_106[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_105[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_104[31]_i_1_n_0 | reset_IBUF                             |               23 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_103[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_128[31]_i_1_n_0 | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_204[31]_i_1_n_0 | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_135[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_134[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_133[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_132[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_131[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_130[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_12[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_129[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_102[31]_i_1_n_0 | reset_IBUF                             |               22 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_127[31]_i_1_n_0 | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_126[31]_i_1_n_0 | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_125[31]_i_1_n_0 | reset_IBUF                             |               13 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_124[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_123[31]_i_1_n_0 | reset_IBUF                             |               15 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_122[31]_i_1_n_0 | reset_IBUF                             |               14 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_121[31]_i_1_n_0 | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_120[31]_i_1_n_0 | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_281     | reset_IBUF                             |               13 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_308     | reset_IBUF                             |               15 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_305     | reset_IBUF                             |               13 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_302     | reset_IBUF                             |               13 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_299     | reset_IBUF                             |               12 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_296     | reset_IBUF                             |               13 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_293     | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_287     | reset_IBUF                             |               11 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_284     | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_290     | reset_IBUF                             |               13 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_311     | reset_IBUF                             |               11 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_278     | reset_IBUF                             |               10 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_275     | reset_IBUF                             |               13 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_272     | reset_IBUF                             |               14 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_269     | reset_IBUF                             |               14 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_266     | reset_IBUF                             |               14 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_263     | reset_IBUF                             |               13 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/ctrl/io_base_IRWrite        | reset_IBUF                             |                5 |             32 |
+|  my_clk/inst/clk_out1 |                                        | my_ddu/vga_inst/core/h_tick[0]_i_1_n_0 |                8 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_338     | reset_IBUF                             |               15 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_101[31]_i_1_n_0 | reset_IBUF                             |               23 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_100[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_0[31]_i_1_n_0   | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_356     | reset_IBUF                             |               14 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_353     | reset_IBUF                             |               13 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_350     | reset_IBUF                             |               14 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_347     | reset_IBUF                             |               13 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_344     | reset_IBUF                             |               11 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_341     | reset_IBUF                             |               13 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_136[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_335     | reset_IBUF                             |               14 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_332     | reset_IBUF                             |               13 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_329     | reset_IBUF                             |               10 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_326     | reset_IBUF                             |               12 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_323     | reset_IBUF                             |               11 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_320     | reset_IBUF                             |               10 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_317     | reset_IBUF                             |                8 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/regFile/_T_314     | reset_IBUF                             |               11 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_179[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_187[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_186[31]_i_1_n_0 | reset_IBUF                             |               23 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_185[31]_i_1_n_0 | reset_IBUF                             |               21 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_184[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_183[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_182[31]_i_1_n_0 | reset_IBUF                             |               21 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_181[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_180[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_17[31]_i_1_n_0  | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_188[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_178[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_177[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_176[31]_i_1_n_0 | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_175[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_174[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_173[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_172[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_137[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_196[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_203[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_201[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_200[31]_i_1_n_0 | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_1[31]_i_1_n_0   | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_19[31]_i_1_n_0  | reset_IBUF                             |               23 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_199[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_198[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_197[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_171[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_195[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_194[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_193[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_192[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_191[31]_i_1_n_0 | reset_IBUF                             |               22 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_190[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_18[31]_i_1_n_0  | reset_IBUF                             |               22 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_189[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_145[31]_i_1_n_0 | reset_IBUF                             |               22 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_153[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_152[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_151[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_150[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_14[31]_i_1_n_0  | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_149[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_148[31]_i_1_n_0 | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_147[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_146[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_154[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_144[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_143[31]_i_1_n_0 | reset_IBUF                             |               21 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_142[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_141[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_140[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_13[31]_i_1_n_0  | reset_IBUF                             |               16 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_139[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_138[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_163[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_16[31]_i_1_n_0  | reset_IBUF                             |               22 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_169[31]_i_1_n_0 | reset_IBUF                             |               21 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_168[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_167[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_166[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_165[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_164[31]_i_1_n_0 | reset_IBUF                             |               17 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_170[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_162[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_161[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_160[31]_i_1_n_0 | reset_IBUF                             |               19 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_15[31]_i_1_n_0  | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_159[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_158[31]_i_1_n_0 | reset_IBUF                             |               20 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_157[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_156[31]_i_1_n_0 | reset_IBUF                             |               18 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/main_mem/memory_155[31]_i_1_n_0 | reset_IBUF                             |               21 |             32 |
+|  my_clk/inst/clk_out1 | my_ddu/cpu/datapath/pc[9]_i_1_n_0      | reset_IBUF                             |               10 |             36 |
+|  my_clk/inst/clk_out1 |                                        |                                        |               21 |             91 |
++-----------------------+----------------------------------------+----------------------------------------+------------------+----------------+
+
+

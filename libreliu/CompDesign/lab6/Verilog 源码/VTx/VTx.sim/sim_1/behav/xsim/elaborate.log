@@ -1,0 +1,43 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 3323e4b95e14406599ddecf402329163 --incr --debug typical --relax --mt 8 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L dist_mem_gen_v8_0_12 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'io_cont' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sim_1/new/top_tb.v:46]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 16 for port 'io_vram_port_raddr' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/new/top.v:97]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 32 for port 'io_vram_port_waddr' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/new/top.v:99]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=57.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.UART
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.MMap
+Compiling module xil_defaultlib.Mem
+Compiling module xil_defaultlib.VGACore
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.CGROMBlackbox
+Compiling module xil_defaultlib.CGROM
+Compiling module xil_defaultlib.VGA
+Compiling module xil_defaultlib.DDU
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_behav

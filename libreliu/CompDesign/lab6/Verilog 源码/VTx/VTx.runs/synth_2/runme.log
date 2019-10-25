@@ -1,0 +1,712 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18584 
+WARNING: [Synth 8-2507] parameter declaration becomes local in uart_rx with formal parameter declaration list [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/new/uart.v:33]
+WARNING: [Synth 8-2507] parameter declaration becomes local in uart_rx with formal parameter declaration list [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/new/uart.v:34]
+WARNING: [Synth 8-2507] parameter declaration becomes local in uart_rx with formal parameter declaration list [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/new/uart.v:35]
+WARNING: [Synth 8-2507] parameter declaration becomes local in uart_rx with formal parameter declaration list [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/new/uart.v:36]
+WARNING: [Synth 8-2507] parameter declaration becomes local in uart_rx with formal parameter declaration list [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/new/uart.v:37]
+WARNING: [Synth 8-2507] parameter declaration becomes local in uart_rx with formal parameter declaration list [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/new/uart.v:38]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1364.273 ; gain = 94.266 ; free physical = 528 ; free virtual = 4324
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.runs/synth_2/.Xil/Vivado-18531-thinkpad-ssd/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [/home/libreliu/Verilog/VivadoProj/VTx/VTx.runs/synth_2/.Xil/Vivado-18531-thinkpad-ssd/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/new/uart.v:23]
+	Parameter CLKS_PER_BIT bound to: 5900 - type: integer 
+	Parameter s_IDLE bound to: 3'b000 
+	Parameter s_RX_START_BIT bound to: 3'b001 
+	Parameter s_RX_DATA_BITS bound to: 3'b010 
+	Parameter s_RX_STOP_BIT bound to: 3'b011 
+	Parameter s_WAIT_FOR_NEXT bound to: 3'b100 
+	Parameter s_CLEANUP bound to: 3'b101 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (2#1) [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/new/uart.v:23]
+INFO: [Synth 8-6157] synthesizing module 'UART' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/new/uart.v:186]
+INFO: [Synth 8-6155] done synthesizing module 'UART' (3#1) [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/new/uart.v:186]
+INFO: [Synth 8-6157] synthesizing module 'DDU' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:8656]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:2005]
+INFO: [Synth 8-6157] synthesizing module 'Datapath' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:928]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (4#1) [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (5#1) [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'Datapath' (6#1) [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:928]
+INFO: [Synth 8-6157] synthesizing module 'Control' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:1219]
+INFO: [Synth 8-6155] done synthesizing module 'Control' (7#1) [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:1219]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (8#1) [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:2005]
+INFO: [Synth 8-6157] synthesizing module 'MMap' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:2144]
+INFO: [Synth 8-6155] done synthesizing module 'MMap' (9#1) [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:2144]
+INFO: [Synth 8-6157] synthesizing module 'Mem' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:2196]
+INFO: [Synth 8-6155] done synthesizing module 'Mem' (10#1) [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:2196]
+INFO: [Synth 8-6157] synthesizing module 'VGA' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:8296]
+INFO: [Synth 8-6157] synthesizing module 'VGACore' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:8125]
+INFO: [Synth 8-6155] done synthesizing module 'VGACore' (11#1) [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:8125]
+INFO: [Synth 8-6157] synthesizing module 'CGROM' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:8275]
+INFO: [Synth 8-6157] synthesizing module 'CGROMBlackbox' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/BlackBoxCGROM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.runs/synth_2/.Xil/Vivado-18531-thinkpad-ssd/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (12#1) [/home/libreliu/Verilog/VivadoProj/VTx/VTx.runs/synth_2/.Xil/Vivado-18531-thinkpad-ssd/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CGROMBlackbox' (13#1) [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/BlackBoxCGROM.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CGROM' (14#1) [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:8275]
+INFO: [Synth 8-6155] done synthesizing module 'VGA' (15#1) [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:8296]
+INFO: [Synth 8-6155] done synthesizing module 'DDU' (16#1) [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:8656]
+WARNING: [Synth 8-689] width (12) of port connection 'io_vram_port_raddr' does not match port width (16) of module 'DDU' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/new/top.v:97]
+WARNING: [Synth 8-689] width (12) of port connection 'io_vram_port_waddr' does not match port width (32) of module 'DDU' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/new/top.v:99]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [/home/libreliu/Verilog/VivadoProj/VTx/VTx.runs/synth_2/.Xil/Vivado-18531-thinkpad-ssd/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (17#1) [/home/libreliu/Verilog/VivadoProj/VTx/VTx.runs/synth_2/.Xil/Vivado-18531-thinkpad-ssd/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top' (18#1) [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/new/top.v:23]
+WARNING: [Synth 8-3331] design CGROMBlackbox has unconnected port clock
+WARNING: [Synth 8-3331] design VGA has unconnected port io_vram_rdata[15]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[31]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[30]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[29]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[28]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[27]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[26]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[25]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[24]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[23]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[22]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[21]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[20]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[19]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[18]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[17]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[16]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[15]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[14]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[13]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[12]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[11]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[10]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[1]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr[0]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[31]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[30]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[29]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[28]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[27]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[26]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[25]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[24]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[23]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[22]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[21]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[20]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[19]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[18]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[17]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[16]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[15]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[14]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[13]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[12]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[11]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[10]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[1]
+WARNING: [Synth 8-3331] design Mem has unconnected port io_mem_addr2[0]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[30]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[29]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[28]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[27]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[26]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[25]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[24]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[23]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[22]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[21]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[20]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[19]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[18]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[17]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[16]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[15]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[14]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[13]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[12]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[11]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[10]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[9]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[8]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[7]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[6]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[5]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[4]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[3]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[2]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[1]
+WARNING: [Synth 8-3331] design UART has unconnected port mem_wdata[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1442.398 ; gain = 172.391 ; free physical = 505 ; free virtual = 4310
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1442.398 ; gain = 172.391 ; free physical = 520 ; free virtual = 4323
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1442.398 ; gain = 172.391 ; free physical = 520 ; free virtual = 4323
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'your_instance_name'
+Finished Parsing XDC File [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'your_instance_name'
+Parsing XDC File [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/cgrom_dist_in_context.xdc] for cell 'my_ddu/vga_inst/cgrom/impl/your_instance_name'
+Finished Parsing XDC File [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/cgrom_dist_in_context.xdc] for cell 'my_ddu/vga_inst/cgrom/impl/your_instance_name'
+Parsing XDC File [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'my_clk'
+Finished Parsing XDC File [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'my_clk'
+Parsing XDC File [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/constrs_1/imports/Dev Constraints/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/constrs_1/imports/Dev Constraints/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/constrs_1/imports/Dev Constraints/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/libreliu/Verilog/VivadoProj/VTx/VTx.runs/synth_2/dont_touch.xdc]
+Finished Parsing XDC File [/home/libreliu/Verilog/VivadoProj/VTx/VTx.runs/synth_2/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1800.234 ; gain = 0.000 ; free physical = 198 ; free virtual = 4027
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1800.234 ; gain = 0.000 ; free physical = 200 ; free virtual = 4028
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1800.234 ; gain = 0.000 ; free physical = 201 ; free virtual = 4029
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1800.234 ; gain = 0.000 ; free physical = 201 ; free virtual = 4029
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1800.234 ; gain = 530.227 ; free physical = 322 ; free virtual = 4147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1800.234 ; gain = 530.227 ; free physical = 322 ; free virtual = 4147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in1. (constraint file  /home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in1. (constraint file  /home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for your_instance_name. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for my_ddu/vga_inst/cgrom/impl/your_instance_name. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for my_clk. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1800.234 ; gain = 530.227 ; free physical = 324 ; free virtual = 4149
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "r_Bit_Index0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "_T_425" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "_GEN_35" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "_T_297" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "_T_338" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "_T_378" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cur_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cur_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cur_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "memory_0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_8" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_9" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_11" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_12" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_13" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_14" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_15" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_16" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_17" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_18" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_19" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_20" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_21" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_22" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_23" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_24" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_25" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_26" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_27" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_28" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_29" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_30" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_31" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_32" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_33" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_34" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_35" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_36" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_37" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_38" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_39" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_40" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_41" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_42" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_43" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_44" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_45" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_46" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_47" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_48" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_49" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_50" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_51" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_52" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_53" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_54" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_55" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_56" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_57" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_58" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_59" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_60" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_61" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_62" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_63" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_64" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_65" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_66" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_67" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_68" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_69" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_70" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_71" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_72" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_73" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_74" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_75" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_76" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_77" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_78" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_79" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_80" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_81" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_82" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_83" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_84" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_85" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_86" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_87" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_88" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_89" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_90" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_91" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_92" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_93" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_94" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_95" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_96" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_97" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_98" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_99" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "col_ctick" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/libreliu/Verilog/VivadoProj/VTx/VTx.srcs/sources_1/imports/VTx_Reg/DDU.v:9232]
+INFO: [Synth 8-5544] ROM "_T_185" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "_T_185" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "_T_216" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "_T_216" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "_T_249" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "_T_249" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1800.234 ; gain = 530.227 ; free physical = 307 ; free virtual = 4134
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 3     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 293   
+	               22 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 14    
++---Multipliers : 
+	                  5x7  Multipliers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 11    
+	   7 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+	   3 Input     22 Bit        Muxes := 3     
+	   2 Input     22 Bit        Muxes := 3     
+	   3 Input     21 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 9     
+	   8 Input     12 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
+	  10 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 16    
+	   3 Input      4 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	  25 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	  12 Input      2 Bit        Muxes := 2     
+	  14 Input      2 Bit        Muxes := 1     
+	  20 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 284   
+	   6 Input      1 Bit        Muxes := 1     
+	  20 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module UART 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module RegFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module Datapath 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 2     
+Module Control 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 10    
+	   3 Input      4 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	  25 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	  12 Input      2 Bit        Muxes := 2     
+	  14 Input      2 Bit        Muxes := 1     
+	  20 Input      2 Bit        Muxes := 1     
+	  20 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 1     
+Module MMap 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module Mem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 256   
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 256   
+Module VGACore 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module CGROMBlackbox 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module VGA 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
++---Multipliers : 
+	                  5x7  Multipliers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 9     
+	   8 Input     12 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 5     
+Module DDU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               22 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input     22 Bit        Muxes := 3     
+	   2 Input     22 Bit        Muxes := 3     
+	   3 Input     21 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1919.234 ; gain = 649.227 ; free physical = 373 ; free virtual = 4080
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'my_clk/clk_out1' to pin 'my_clk/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:18 . Memory (MB): peak = 1919.234 ; gain = 649.227 ; free physical = 251 ; free virtual = 3965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:34 ; elapsed = 00:01:39 . Memory (MB): peak = 1919.234 ; gain = 649.227 ; free physical = 199 ; free virtual = 3938
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:36 ; elapsed = 00:01:41 . Memory (MB): peak = 1919.234 ; gain = 649.227 ; free physical = 203 ; free virtual = 3940
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:36 ; elapsed = 00:01:41 . Memory (MB): peak = 1919.234 ; gain = 649.227 ; free physical = 203 ; free virtual = 3940
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:36 ; elapsed = 00:01:41 . Memory (MB): peak = 1919.234 ; gain = 649.227 ; free physical = 204 ; free virtual = 3941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_0 |         1|
+|2     |clk_wiz_0      |         1|
+|3     |blk_mem_gen_0  |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |blk_mem_gen_0  |     1|
+|2     |clk_wiz_0      |     1|
+|3     |dist_mem_gen_0 |     1|
+|4     |CARRY4         |    96|
+|5     |LUT1           |   131|
+|6     |LUT2           |   166|
+|7     |LUT3           |    93|
+|8     |LUT4           |   256|
+|9     |LUT5           |   190|
+|10    |LUT6           |  5891|
+|11    |MUXF7          |  2568|
+|12    |MUXF8          |  1188|
+|13    |FDRE           |  8140|
+|14    |FDSE           |  1445|
+|15    |IBUF           |     7|
+|16    |OBUF           |    46|
++------+---------------+------+
+
+Report Instance Areas: 
++------+----------------+--------------+------+
+|      |Instance        |Module        |Cells |
++------+----------------+--------------+------+
+|1     |top             |              | 20242|
+|2     |  uart_rx_inst  |uart_rx       |   128|
+|3     |  uart_inst     |UART          |     3|
+|4     |  my_ddu        |DDU           | 20041|
+|5     |    cpu         |CPU           |  3167|
+|6     |      datapath  |Datapath      |  3048|
+|7     |        alu     |ALU           |   347|
+|8     |        regFile |RegFile       |  2403|
+|9     |      ctrl      |Control       |   119|
+|10    |    mmap        |MMap          |    51|
+|11    |    main_mem    |Mem           | 16153|
+|12    |    vga_inst    |VGA           |   348|
+|13    |      core      |VGACore       |   200|
+|14    |      cgrom     |CGROM         |    18|
+|15    |        impl    |CGROMBlackbox |    18|
++------+----------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:36 ; elapsed = 00:01:41 . Memory (MB): peak = 1919.234 ; gain = 649.227 ; free physical = 204 ; free virtual = 3941
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:27 ; elapsed = 00:01:32 . Memory (MB): peak = 1919.234 ; gain = 291.391 ; free physical = 261 ; free virtual = 3997
+Synthesis Optimization Complete : Time (s): cpu = 00:01:36 ; elapsed = 00:01:41 . Memory (MB): peak = 1919.242 ; gain = 649.227 ; free physical = 261 ; free virtual = 3997
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3852 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1919.242 ; gain = 0.000 ; free physical = 203 ; free virtual = 3938
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+168 Infos, 89 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:41 ; elapsed = 00:01:45 . Memory (MB): peak = 1919.242 ; gain = 649.469 ; free physical = 286 ; free virtual = 4020
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1919.242 ; gain = 0.000 ; free physical = 286 ; free virtual = 4020
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/libreliu/Verilog/VivadoProj/VTx/VTx.runs/synth_2/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 31 20:49:38 2019...

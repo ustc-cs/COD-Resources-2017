@@ -1,0 +1,7 @@
+[
+  {
+    "class":"firrtl.transforms.BlackBoxResourceAnno",
+    "target":"DDU.CGROMBlackbox",
+    "resourceId":"/BlackBoxCGROM.v"
+  }
+]
